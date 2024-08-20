@@ -1,0 +1,29 @@
+.Ac {
+    color: white;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    color: white;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.imagem-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; 
+    max-width: 1200px;
+    flex-wrap: wrap;
+    margin-bottom: 1rem;
+}
+
+.imagem-container img {
+    width: 150px; 
+    height: auto; 
+    margin: 0.5rem;
+    border-radius: 8px;
+}

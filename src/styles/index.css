@@ -1,0 +1,96 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    background: url('../assets/img/tech-cell.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.layout {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+svg {
+    margin: 5%;
+}
+
+.content {
+    flex: 1;
+}
+
+.footer {
+    margin-top: auto;
+}
+
+@media (max-width: 900px) { /* Ajuste para incluir dispositivos móveis e tablets */
+
+  .navibar .menu {
+    display: block;
+  }
+
+  .navibar .button-home {
+    display: none;
+  }
+
+  .navibar.menu-open .button-home {
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 40px;
+    left: 0;
+    right: 0;
+    padding: 20px;
+  }
+
+  .button-item {
+    display: block;
+    margin: 10px 0;
+  }
+
+  .button-item-l {
+    cursor: pointer;
+    padding: revert;
+    display: block;
+    margin: 10px 0;
+  }
+
+  .movel {
+    display: flex;
+    font-family: fantasy;
+    font-size: larger;
+    color: rgba(11, 234, 104, 0.466);
+    justify-content: center;
+    margin: 2rem;
+    margin-top: -5%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+@media (max-width: 600px) { /* Ajuste para dispositivos móveis */
+  .header {
+    display: none;
+  }
+
+  .header-text {
+    display: none;
+  }
+
+  .navibar .movel {
+    margin: 15%;
+    display: flex;
+  }
+}
+
+svg {
+    color: white;
+    margin: 15%;
+}
